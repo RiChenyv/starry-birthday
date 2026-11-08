@@ -33,3 +33,5 @@ python generate.py "小星" 2027-08-19 -o "dist/小星的生日礼物.html"
 ### 星空蛋糕
 
 ![星空蛋糕、流星雨和奇幻光环](assets/cake.webp)
+
+**禁止商用**
