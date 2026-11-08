@@ -4,21 +4,25 @@
 
 ## 脚本用法
 
-将 `generate.py` 和 `template.html` 放在同一目录，用 Python 3.8 或更新版本运行 `python generate.py`，按提示输入姓名和日期。也可直接传参。
+将 `generate.py` 和 `template.html` 放在同一目录，在终端用 Python 3.8 或更新版本运行。
 
 ```sh
-python generate.py "小星" 2027-08-19
+python generate.py
 ```
+
+1. 按提示逐行输入收件人姓名和庆祝日期。日期使用 `YYYY-MM-DD` 格式，例如 `2027-08-19`。
+2. 阅读终端展示的默认信件。直接回车保留默认正文，或输入 `2` 自定义正文。
+3. 自定义时，每行输入一段，单独输入一行 `/结束` 后回车。脚本会自动用收件人姓名生成称呼，落款仍为「你的朋友」。
 
 打开生成的 `dist/星河生日礼物.html` 即可查看或分享。
 
 **再次使用默认文件名时**，请先删除或改名上次生成的 `dist/星河生日礼物.html`，腾出文件名后再运行脚本。也可用 `-o` 指定一个新的输出路径，保留上次生成的网页。
 
 ```sh
-python generate.py "小星" 2027-08-19 -o "dist/小星的生日礼物.html"
+python generate.py -o "dist/小星的生日礼物.html"
 ```
 
-`template.html` 内嵌页面样式、脚本及 Three.js 的 MIT 许可。可在其中搜索 `letter-body` 编辑信件正文。
+`template.html` 内嵌页面样式、脚本及 Three.js 的 MIT 许可。
 
 ## 效果预览
 
